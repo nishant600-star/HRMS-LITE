@@ -1,58 +1,55 @@
-# HRMS-LITE
-HRMS Lite – Employee &amp; Attendance Management System
+# HRMS Lite 🧑‍💼📊
 
-# HRMS-LITE (Human Resource Management System)
+HRMS Lite is a simple Human Resource Management System built using the **MERN stack**.  
+It allows managing employees, tracking attendance, and viewing a dashboard summary.
 
-HRMS-LITE is a lightweight full-stack Human Resource Management System built as part of an industry-style assignment.  
-It allows a single admin to manage employees, track attendance, and view basic dashboard statistics.
-
-The project focuses on clean architecture, RESTful APIs, and a usable UI rather than over-engineering.
+This project is designed as a **clean, beginner-to-intermediate level industry assignment** with proper backend–frontend separation and API-based architecture.
 
 ---
 
-## Features
+## 🚀 Features
 
-###  Employee Management
-- Add employee with:
+### 👤 Employee Management
+- Add new employees
+- View employee list
+- Delete employees
+- Each employee has:
   - Employee ID (unique)
   - Full Name
   - Email Address
   - Department
-- View employee list
-- Delete employee
-- Duplicate employee protection
 
-###  Attendance Management
-- Mark attendance (Present / Absent)
-- Select employee before marking attendance
-- Attendance records linked to employees
-- Filter attendance by date
+### 🕒 Attendance Management
+- Mark employee attendance (Present / Absent)
+- Attendance linked to employees
+- View attendance history with date & status
 
-###  Dashboard
-- Total employees count
-- Total attendance records count
-- Automatically updates when data changes
+### 📊 Dashboard
+- Total number of employees
+- Total attendance records
+- Present count
+- Absent count
+- Data updates automatically when employees or attendance change
 
 ---
 
-##  Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
-- React
+- React (Vite)
 - React Router
 - Axios
-- Plain CSS (no UI framework, clean & minimal)
+- Basic CSS (no Tailwind / UI libraries)
 
 ### Backend
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
-
-### Database
-- MongoDB Atlas (Cloud NoSQL database)
+- CORS
+- dotenv
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
