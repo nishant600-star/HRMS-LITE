@@ -4,7 +4,6 @@ const Attendance = require("../models/Attendance");
 exports.getDashboardSummary = async (req, res) => {
     try {
         const totalEmployees = await Employee.countDocuments();
-
         const totalAttendance = await Attendance.countDocuments();
 
         const presentCount = await Attendance.countDocuments({
@@ -15,15 +14,14 @@ exports.getDashboardSummary = async (req, res) => {
             status: "Absent",
         });
 
-        res.status(200).json({
+        res.json({
             totalEmployees,
             totalAttendance,
             presentCount,
             absentCount,
         });
-    } catch (error) {
-        res.status(500).json({
-            message: "Failed to load dashboard data",
-        });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: "Dashboard error" });
     }
 };
